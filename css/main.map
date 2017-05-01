@@ -1,0 +1,26 @@
+{
+	"version": 3,
+	"file": "../scss/main.css",
+	"sources": [
+		"../scss/main.scss",
+		"../scss/_colors.scss",
+		"../scss/_reset.scss",
+		"../scss/_typography.scss",
+		"../scss/_blocks.scss",
+		"../scss/_components.scss",
+		"../scss/_nav.scss",
+		"../scss/_footer.scss"
+	],
+	"sourcesContent": [
+		"//Steven leabo \r\n@import \"_colors\";\r\n@import \"_reset\";\r\n@import \"_typography\";\r\n@import \"_blocks\";\r\n@import \"_components\";\r\n@import \"_nav\";\r\n@import \"_footer\";\r\n\r\n",
+		"$primary-color:#ccc;\r\n",
+		"* {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n}",
+		"",
+		"body, html, h1, h2, h3, h4, h5{\r\n\tmargin:0;\r\n\tpadding:0;\r\n}\r\n.container > .navbar {\r\n    margin-bottom: 0;\r\n}\r\nheader > .container > .jumbotron{\r\n\tborder-radius:0;\r\n\tmargin-bottom:20px;\r\n}\r\n.row > .col-xs-12, .col-sm-6, .col-md-6, .col-lg-3 > .thumbnail{\r\n\tborder:none;\r\n\tmargin:20px auto;\r\n}\r\ndiv.media{\r\n\tmargin-top:60px;\r\n}\r\n.flex{\r\n\t  display: -ms-flexbox;\r\n\t  display: flex;\r\n    display: -webkit-flex;\r\n}",
+		"",
+		"",
+		"footer{\r\n\theight:350px;\r\n\tbackground:#ccc;\r\n\tmargin-top:60px;\r\n}"
+	],
+	"mappings": ";AEAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;EACX,UAAU,EAAE,UAAW;CAC1B;;;AEJD,AAAA,IAAI,EAAE,AAAA,IAAI,EAAE,AAAA,EAAE,EAAE,AAAA,EAAE,EAAE,AAAA,EAAE,EAAE,AAAA,EAAE,EAAE,AAAA,EAAE,CAAA;EAC7B,MAAM,EAAC,CAAE;EACT,OAAO,EAAC,CAAE;CACV;;;AACD,AAAa,UAAH,GAAG,OAAO,CAAC;EACjB,aAAa,EAAE,CAAE;CACpB;;;AACD,AAAsB,MAAhB,GAAG,UAAU,GAAG,UAAU,CAAA;EAC/B,aAAa,EAAC,CAAE;EAChB,aAAa,EAAC,IAAK;CACnB;;;AACD,AAAO,IAAH,GAAG,UAAU,EAAE,AAAA,SAAS,EAAE,AAAA,SAAS,EAAE,AAAY,SAAH,GAAG,UAAU,CAAA;EAC9D,MAAM,EAAC,IAAK;EACZ,MAAM,EAAC,SAAU;CACjB;;;AACD,AAAG,GAAA,AAAA,MAAM,CAAA;EACR,UAAU,EAAC,IAAK;CAChB;;;AACD,AAAA,KAAK,CAAA;EACF,OAAO,EAAE,WAAY;EACrB,OAAO,EAAE,IAAK;EACb,OAAO,EAAE,YAAa;CACzB;;;AGtBD,AAAA,MAAM,CAAA;EACL,MAAM,EAAC,KAAM;EACb,UAAU,EAAC,IAAK;EAChB,UAAU,EAAC,IAAK;CAChB",
+	"names": []
+}

@@ -1,0 +1,23 @@
+body, html, h1, h2, h3, h4, h5{
+	margin:0;
+	padding:0;
+}
+.container > .navbar {
+    margin-bottom: 0;
+}
+header > .container > .jumbotron{
+	border-radius:0;
+	margin-bottom:20px;
+}
+.row > .col-xs-12, .col-sm-6, .col-md-6, .col-lg-3 > .thumbnail{
+	border:none;
+	margin:20px auto;
+}
+div.media{
+	margin-top:60px;
+}
+.flex{
+	  display: -ms-flexbox;
+	  display: flex;
+    display: -webkit-flex;
+}

@@ -1,0 +1,68 @@
+
+/* line 1, C:/Users/t0nt/Dropbox/GitHub/boiler-plate/scss/_reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 1, C:/Users/t0nt/Dropbox/GitHub/boiler-plate/scss/_blocks.scss */
+body, html, h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, C:/Users/t0nt/Dropbox/GitHub/boiler-plate/scss/_blocks.scss */
+.container > .navbar {
+  margin-bottom: 0;
+}
+
+/* line 8, C:/Users/t0nt/Dropbox/GitHub/boiler-plate/scss/_blocks.scss */
+header > .container > .jumbotron {
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+
+/* line 12, C:/Users/t0nt/Dropbox/GitHub/boiler-plate/scss/_blocks.scss */
+.row > .col-xs-12, .col-sm-6, .col-md-6, .col-lg-3 > .thumbnail {
+  border: none;
+  margin: 20px auto;
+}
+
+/* line 16, C:/Users/t0nt/Dropbox/GitHub/boiler-plate/scss/_blocks.scss */
+div.media {
+  margin-top: 60px;
+}
+
+/* line 19, C:/Users/t0nt/Dropbox/GitHub/boiler-plate/scss/_blocks.scss */
+.flex {
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+}
+
+/* line 1, C:/Users/t0nt/Dropbox/GitHub/boiler-plate/scss/_footer.scss */
+footer {
+  height: 350px;
+  background: #ccc;
+  margin-top: 60px;
+}
+body, .fullWidth{
+	width:100% !important;
+}
+.margin-top{
+	margin-top:20px;			
+}
+.bigFont{
+	font-size:2.5rem;
+}
+#result {
+	margin-left:20px;
+	margin-right:20px;
+}
+#pseudoElement{
+	padding-top: 50px;
+}
+.sortable{
+	cursor:pointer;
+}
