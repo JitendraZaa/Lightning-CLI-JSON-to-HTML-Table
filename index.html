@@ -8,17 +8,17 @@
 		<meta name='subject' content='subject'>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel='shortcut icon' type='image/ico' href='favicon.ico'>
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css" media="screen,print">
 
 		<!--Jquery-->
 		<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
 		 
 		<!--Bootstrap-->
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> </link>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"  media="screen,print"> </link>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 		<!--Font Awesome-->
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous"></link>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous"  media="screen,print"></link>
 		 
 
 		<title>Lightning CLI JSON to HTML Table</title>
@@ -44,12 +44,14 @@
 			  <h1>Lightnign CLI JSON beautifier</h1> 
 			  <p>
 				<a href="">Check this post for more detail on how to use it</a> <br /> 
+				
 			  </p>
 			  <div class="pull-right bigFont">
 				 <a href="http://www.JitendraZaa.com" target="_blank">By - Jitendra Zaa</a>
 			  </div>
 			</div>
 		</div> 
+		<pre class="paddLeftRight"> Run this command to get JSON: heroku lightning:lint . -j > CodeReview.json </pre>
 		<div class="container" id="jsonInput">
 			<div class="row">
 			  <div class="col-md-10">
@@ -60,11 +62,23 @@
 			  </div>
 			</div> 
 		</div>
+		
 		<!-- because of Navigation component, documet is not correctly navigated to hash location so need this-->
-		<div id="pseudoElement" class="container"></div>
-		<div id="result">
-		 <!-- Table placeholder -->
+		<div id="pseudoElement" class="hide">
+			<div class="text-center">
+				<span title="print result" onclick="printResult()" class="glyphicon glyphicon-print sortable" aria-hidden="true" style="font-size: 2em;"></span>
+			</div>
 		</div>
+		<div id="printArea">
+			<div id="result">
+			 <!-- Table placeholder -->
+			</div>
+			<div class="container">
+				<div id="waterMark" class="pull-right hide">
+				 <a href="http://www.JitendraZaa.com" target="_blank">By - Jitendra Zaa</a>
+			  </div>
+			</div>
+		</div> 
 		
 		<!-- Custom Javascript code --> 
 		<script src="js/main.js"></script> 

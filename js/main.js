@@ -22,7 +22,8 @@ $( document ).ready(function() {
  
 
 $( "#btnConvert" ).click(function() { 
-  
+  $("#pseudoElement").removeClass("hide");
+  $("#waterMark").removeClass("hide");
   var txtJSON = $("#txtJSON").val(); 
   if(txtJSON){
 	  $.each(JSON.parse(txtJSON), function(i, obj) { 
@@ -132,6 +133,18 @@ function sortArrayCustom(a, b)
 		if (a1 < b1) return 1;
 		return 0;
 	}
+  
+}
+
+function printResult(){ 
+	
+	var divToPrint=document.getElementById('printArea'); 
+	var newWin=window.open('','Print-Window');
+
+	newWin.document.open(); 
+	newWin.document.write('<html><head><meta http-equiv="content-type" content="text/html;charset=UTF-8" /></head><body onload="window.print()">'+divToPrint.innerHTML+'<link rel="stylesheet" type="text/css" href="css/main.css" media="screen,print"><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous"  media="screen,print"> </link></body></html>'); 
+	newWin.document.close(); 
+	setTimeout(function(){newWin.close();},1000);
   
 }
 

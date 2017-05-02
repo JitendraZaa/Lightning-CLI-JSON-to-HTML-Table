@@ -56,7 +56,7 @@ body, .fullWidth{
 .bigFont{
 	font-size:2.5rem;
 }
-#result {
+#result,#pseudoElement,.paddLeftRight {
 	margin-left:20px;
 	margin-right:20px;
 }
@@ -65,4 +65,14 @@ body, .fullWidth{
 }
 .sortable{
 	cursor:pointer;
+}
+table { page-break-inside:auto }
+tr    { page-break-inside:avoid; page-break-after:auto }
+thead { display:table-header-group }
+tfoot { display:table-footer-group }
+@media print {
+  table {float: none !important; }
+  div { float: none !important; }
+  .page-break { page-break-inside: avoid; page-break-before: always; }
+  .dont-print { display: none; }  
 }
